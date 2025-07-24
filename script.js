@@ -182,6 +182,6 @@
 
         // Initialize with first tab active
         window.addEventListener('DOMContentLoaded', () => {
-            showDesignGallery('daily');
+            showDesignGallery("product-design");
         });
 
