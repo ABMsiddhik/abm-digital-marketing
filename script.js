@@ -97,18 +97,14 @@
             e.preventDefault();
 
             const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
+    
             const phone = document.getElementById('phone').value.trim();
             const service = document.getElementById('service').value;
             const message = document.getElementById('message').value.trim();
 
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address');
-                return;
-            }
+            
 
-            const whatsappMessage = `Hello! I'm interested in your services.\n\n*Name:* ${name}\n*Email:* ${email}\n*Phone:* ${phone || 'Not provided'}\n*Service:* ${service}\n*Message:* ${message || 'No message provided'}`;
+            const whatsappMessage = `Hello! I'm interested in your services.\n\n*Name:* ${name}\n*Phone:* ${phone || 'Not provided'}\n*Service:* ${service}\n*Message:* ${message || 'No message provided'}`;
             const encodedMessage = encodeURIComponent(whatsappMessage);
             const whatsappURL = `https://wa.me/918012626111?text=${encodedMessage}`;
 
