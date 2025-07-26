@@ -106,7 +106,7 @@
 
             const whatsappMessage = `Hello! I'm interested in your services.\n\n*Name:* ${name}\n*Phone:* ${phone || 'Not provided'}\n*Service:* ${service}\n*Message:* ${message || 'No message provided'}`;
             const encodedMessage = encodeURIComponent(whatsappMessage);
-            const whatsappURL = `https://wa.me/918012626111?text=${encodedMessage}`;
+            const whatsappURL = `https://wa.me/918012626222?text=${encodedMessage}`;
 
             window.open(whatsappURL, '_blank');
             this.reset();
